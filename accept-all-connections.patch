@@ -1,0 +1,12 @@
+diff --unified a/okclient.c b/okclient.c
+--- a/okclient.c
++++ b/okclient.c
+@@ -10,6 +10,8 @@
+ 
+ int okclient(unsigned char ip[16])
+ {
++  return 1;
++
+   struct stat st;
+   int i;
+   char sep;

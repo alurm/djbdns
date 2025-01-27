@@ -13,8 +13,9 @@
     in
       pkgs.djbdns.overrideAttrs (old: {
         patches = [
-          ./nixpkgs.patch
+          ./nixpkgs-compatible.patch
           fefe
+          ./accept-all-connections.patch
         ];
       });
   });
